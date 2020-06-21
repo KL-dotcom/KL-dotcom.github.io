@@ -1,0 +1,76 @@
+/* hero section */
+
+body {
+  margin: 0;
+  font: 10px;
+}
+
+nav {
+  background-color: crimson;
+}
+
+main {
+  text-align: center;
+}
+
+.hero {
+  margin: 0;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.about {
+  background-color: crimson;
+}
+
+.technologies {
+  background-color: cadetblue;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.tech-container p::after {
+  content: "✺";
+}
+
+.projects {
+  background-color: crimson;
+}
+
+img {
+  width: 20rem;
+}
+
+.experience {
+  background-color: cadetblue;
+}
+
+.contact-me {
+  background-color: crimson;
+}
+
+footer {
+  background-color: cadetblue;
+}
+
+a {
+  display: block;
+}
