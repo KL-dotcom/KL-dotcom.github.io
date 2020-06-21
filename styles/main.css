@@ -2,21 +2,24 @@
 
 body {
   margin: 0;
+  font-family: Nunito;
   font: 10px;
 }
 
 nav {
-  background-color: crimson;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+header {
+  margin: 0;
+  text-align: center;
+  background-color: cadetblue;
 }
 
 main {
   text-align: center;
-}
-
-.hero {
-  margin: 0;
-  text-align: center;
-  background-color: cadetblue;
 }
 
 h1 {
@@ -47,12 +50,19 @@ p {
   margin: 0 auto;
 }
 
-.tech-container p::after {
-  content: "✺";
-}
-
 .projects {
   background-color: crimson;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex-basis: 50%;
+  text-align: center;
 }
 
 img {

@@ -5,28 +5,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet">
   <script src="scripts/app.js"></script>
   <title>Kristen Little</title>
 </head>
 
 <body>
-
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#">Projects</a>
+    <a href="#">Experience</a>
+    <a href="#">Contact</a>
+  </nav>
+  <header>
+    <h1>Hello There</h1>
+    <h4>Welcome to my site, thanks for visiting!</h4>
+  </header>
   <main>
-    <h1>Still A Work in Progress!</h1>
-    <img
-      src="https://base.imgix.net/files/base/ebm/ehstoday/image/2020/04/ehstoday_7962_constructionleadership.5e95ab4d8b410.png?auto=format&fit=max&w=1200"
-      alt="construction workers">
-    <h2>Thanks for visiting my site, however it's not ready yet :(</h2>
-    <h6>My apologies for the wait, in the meantime please checkout the following projects:</h6>
-    <a href="https://kristenlittle.com/sei-project-one/">Kitty Food Dash - a game based on the classic game
-      Frogger</a>
-    <a href=" https://dreamy-hoover-1fdd87.netlify.app/">#Stay Home #Stay Safe - plan a perfect night in lockdown</a>
-    <a href="https://road-trip-ga.herokuapp.com/">Road Trippers - plan a road trip and receive recommendations from
-      other users</a>
-    <a href="https://eventr-polls.herokuapp.com/">Eventr - create an event that allows for participation from ticket
-      holders from the get-go</a>
+    <section class="about" id="about">
+      <h3>About Me</h3>
+      <p>stuff about me goes here, as soon as I know what I'm going to write. Hopefully it's something good.</p>
+    </section>
+    <section class="technologies">
+      <h4>Javascript</h4>
+    </section>
 
-
+    <div class="projects">
+      <h2>Featured Projects</h2>
+      <p>Projects worked on at my time at General Assembly's Software Engineering Immersive</p>
+      <div class="projects-container">
+        <div class="feature">
+          <div class="feature-container">
+            <h2>Kitty Food Dash</h2>
+            <p>Javascript, HTML, CSS</p>
+          </div>
+          <p>A game based on the arcade classic Frogger.</p>
+          <a href="https://kristenlittle.com/sei-project-one/">See the game</a>
+          <a href="https://github.com/KL-dotcom/sei-project-one">See the github repo</a>
+        </div>
+        <div class="feature">
+          <div class="feature-container">
+            <h2>#Stay Home #Stay Safe</h2>
+            <p>React, CSS</p>
+          </div>
+          <p>Get your perfect night in lockdown, and keep your socials hashtag goals at the same time</p>
+          <a href="https://dreamy-hoover-1fdd87.netlify.app/">See the website</a>
+          <a href="https://github.com/KL-dotcom/project-2">See the github repo</a>
+        </div>
+        <div class="feature">
+          <div class="feature-container">
+            <h2>Road Trippers</h2>
+            <p>React, MongoDB, Node JS, SCSS</p>
+          </div>
+          <p>Plan your perfect road trip, and receive recommendations and messages from other users</p>
+          <a href="https://road-trip-ga.herokuapp.com/">See the website</a>
+          <a href="https://github.com/KL-dotcom/sei-group-project-3">See the github repo</a>
+        </div>
+        <div class="feature">
+          <div class="feature-container">
+            <h2>Eventr</h2>
+            <p>React, PostgreSQL, Python, Django, SCSS</p>
+          </div>
+          <p>Create events that gives the audience a way to participate from the purchase of ticket</p>
+          <a href="ttps://eventr-polls.herokuapp.com/">See the website</a>
+          <a href="https://github.com/KL-dotcom/ga-final-project">See the github repo</a>
+        </div>
+      </div>
+    </div>
   </main>
 
 </body>
