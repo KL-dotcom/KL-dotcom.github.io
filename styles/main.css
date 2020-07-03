@@ -2,7 +2,6 @@
 
 /* 120136=>dark blue 
 035aa6 => medium blue 
-40bad5 => light blue
 fcbf1e => complementary yellow
 */
 
@@ -12,27 +11,74 @@ body {
   font: 10px;
 }
 
+/* @media only screen and (min-width: 800px) {
+  body {
+    
+  }
+} */
+
 nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 15px 30px;
   background-color: #120136;
+  color: #035aa6;
+}
+
+nav p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+nav a {
+  display: inline;
+  text-decoration: none;
+  color: #035aa6;
+  margin: auto;
+  padding-right: 5px;
+}
+
+nav a:hover {
+  color: #fcbf1e;
+}
+
+@media only screen and (min-width: 900px) {
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    padding: 1rem;
+  }
 }
 
 header {
+  display: flex;
   margin: 0;
   text-align: center;
   background-color: #120136;
-  color: #40bad5;
-  height: 30rem;
-}
-
-main {
-  text-align: center;
+  color: #fcbf1e;
+  height: 15rem;
 }
 
 h1 {
   margin: auto;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    height: 30rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+main {
+  text-align: center;
 }
 
 h3 {
@@ -44,8 +90,8 @@ p {
 }
 
 .about {
-  background-color: #fcbf1e;
   color: #120136;
+  display: flex;
 }
 
 .about p {
@@ -53,7 +99,7 @@ p {
 }
 
 .technologies {
-  background-color: #40bad5;
+  background-color: #fcbf1e;
 }
 
 .tech-container {
@@ -93,4 +139,13 @@ img {
 
 a {
   display: block;
+}
+
+.experience {
+  background-color: #fcbf1e;
+  color: #120136;
+}
+
+.contact-me {
+  background-color: #120136;
 }

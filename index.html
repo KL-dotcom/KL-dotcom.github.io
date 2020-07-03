@@ -5,30 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&css2?family=Roboto+Mono&display=swap"
+    rel="stylesheet">
   <script src="scripts/app.js"></script>
   <title>Kristen Little</title>
 </head>
+<nav>
+  <p class="nav-name">Kristen Little</p>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
 <body>
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#">Contact</a>
-  </nav>
   <header>
-    <h1>Hello There</h1>
-    <h4>Welcome to my site, thanks for visiting!</h4>
+    <h1></h1>
   </header>
   <main>
+
     <section class="about" id="about">
       <h3>About Me</h3>
       <p>I was inspired to enroll in a coding bootcamp after working cross-functionally with development teams in my
         previous
         positions. Seeing the development teams work to build the company’s platforms and products, and solve problems
-        encountered by customers and colleagues inspired me to pursue this as a career.</p>
-      <p>I am looking to join a workplace where I could bring my skills of abductive reasoning, risk-based decision
+        encountered by customers and colleagues inspired me to pursue this as a career.
+        I am looking to join a workplace where I could bring my skills of abductive reasoning, risk-based decision
         making as
         well as my familiarity with UK Financial regulations. I would like to further develop myself and my skills to
         become a
@@ -36,16 +40,17 @@
       </p>
     </section>
     <section class="technologies">
-      <div>Technologies: HTML, CSS, JavaScript, Python, SCSS, Node.js, React.js, React.js Hooks, Express.js, Bulma, REST
+      <h3>Technologies:</h3>
+      <div>HTML, CSS, JavaScript, Python, SCSS, Node.js, React.js, React.js Hooks, Express.js, Bulma, REST
         APIs,
         Jest, Babel, Axios, JSON Web Tokens
         Databases: SQL and NoSQL, MongoDB, Mongoose, PostgreSQL, Django
         Version Control: Git, GitHub, Zsh
         Tools: VSCode, Eslint, Insomnia, Yarn, Npm, Homebrew, Robo 3T, TablePlus
         Deployment: GitHub Pages, Netlify, Heroku</div>
-    </section>
 
-    <section class="projects">
+    </section>
+    <section class="projects" id="projects">
       <h2>Featured Projects</h2>
       <p>Projects worked on at my time at General Assembly's Software Engineering Immersive</p>
       <div class="projects-container">
@@ -107,9 +112,10 @@
           stakeholders.</p>
       </div>
     </section>
-    <section>
+    <section class="contact-me" id="contact">
       <a href="mailto:mail@kristenlittle.com?subject=Email from website">Contact Me</a>
     </section>
+
   </main>
 
 </body>
