@@ -1,14 +1,15 @@
 /* hero section */
 
-/* 120136=>dark blue 
-035aa6 => medium blue 
-fcbf1e => complementary yellow
+/* eeeeee =>white 
+393e46 => dark grey 
+76ead7 => complementary turquoise
 */
 
 body {
   margin: 0;
   font-family: Nunito;
   font: 10px;
+  text-align: center;
 }
 
 /* @media only screen and (min-width: 800px) {
@@ -22,26 +23,29 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   padding: 15px 30px;
-  background-color: #120136;
-  color: #035aa6;
+  background-color: #393e46;
+  color: #eeeeee;
+  text-align: left;
 }
 
 nav p {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
+  margin: 0 0 10px 0;
+  font-family: 'Roboto Mono', monospace;
 }
 
-nav a {
+nav a, .contact-me a {
   display: inline;
   text-decoration: none;
-  color: #035aa6;
+  color: #eeeeee;
   margin: auto;
-  padding-right: 5px;
+  padding-right: 18px;
 }
 
 nav a:hover {
-  color: #fcbf1e;
+  color: #76ead7;
 }
 
 @media only screen and (min-width: 900px) {
@@ -57,8 +61,8 @@ header {
   display: flex;
   margin: 0;
   text-align: center;
-  background-color: #120136;
-  color: #fcbf1e;
+  background-color: #393e46;
+  color: #76ead7;
   height: 15rem;
 }
 
@@ -77,42 +81,110 @@ h1 {
   }
 }
 
-main {
-  text-align: center;
-}
-
-h3 {
-  margin: auto;
-}
-
-p {
-  margin: 0;
-}
-
 .about {
-  color: #120136;
+  background-color: #76ead7;
+  color: #393e46;
+}
+
+.about h3, .skills h3, .experience h3 {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #eeeeee;
+  text-shadow: 1px 1px 1px #393e46;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.about p, .experience p {
+  margin: 0;
+  padding: 0 3rem 1rem 3rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .about p, .experience p {
+    padding: 10px 300px 10px 300px;
+  }
+  .about h3, .skills h3, .experience h3 {
+    padding-top: 100px;
+    font-size: 2.5rem;
+  }
+}
+
+span {
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.skills {
+  margin: auto;
+  background-color: #76ead7;
+  color: #393e46;
+}
+
+.skills-container {
   display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
 }
 
-.about p {
-  padding: 4rem;
+.skills-container p {
+  flex-basis: 30%;
+  padding: 0 20px;
 }
 
-.technologies {
-  background-color: #fcbf1e;
+@media only screen and (min-width: 900px) {
+  .skills-container p {
+    padding: 0 300px;
+  }
 }
 
-.tech-container {
+.feature {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 30rem;
-  margin: 0 auto;
+  flex-direction: column;
+  margin: 20px 0;
 }
 
-.projects {
-  background-color: #035aa6;
-  color: #fcbf1e;
+h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  min-width: 100px;
+  padding: 2px;
+  margin: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #76ead7;
+  border-radius: 4px;
+  color: #76ead7;
+}
+
+.links a:hover {
+  background-color: #76ead7;
+  color: #eeeeee;
+}
+
+img {
+  width: 350px;
+  margin: auto;
+  flex-basis: 30%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #393e46;
+}
+
+.projects h3, .contact-me h3 {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #76ead7;
+  text-shadow: 1px 1px 1px #393e46;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .projects-container {
@@ -124,28 +196,76 @@ p {
 .feature {
   flex-basis: 1;
   text-align: center;
-  height: 20rem;
 }
 
-.game {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left center;
+.feature-container p {
+  padding: 0 50px;
 }
 
-img {
-  width: 20rem;
-}
-
-a {
-  display: block;
+@media only screen and (min-width: 900px) {
+  .feature {
+    flex-direction: row;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .feature {
+    margin: 70px;
+  }
+  h4 {
+    margin: 30px 0 20px;
+    font-size: 1.5rem;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+  .links a {
+    padding: 5px;
+    margin: 5px;
+  }
+  .projects h3, .contact-me h3 {
+    font-size: 2.5rem;
+  }
+  img {
+    width: 600px;
+  }
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .feature {
+    height: 20rem;
+  }
+  .feature-container p {
+    padding: 0 150px;
+  }
 }
 
 .experience {
-  background-color: #fcbf1e;
-  color: #120136;
+  background-color: #76ead7;
+}
+
+.role {
+  color: #393e46;
+}
+
+.role:last-child {
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 900px) {
+  .role:last-child {
+    padding-bottom: 100px;
+  }
 }
 
 .contact-me {
-  background-color: #120136;
+  background-color: #393e46;
+  padding-bottom: 60px;
+}
+
+.contact-me a:hover {
+  color: #76ead7;
 }

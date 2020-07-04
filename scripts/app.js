@@ -7,13 +7,11 @@ function init() {
   let i = 0
 
   function writingText() {
-
     if (i <= titleText.length) {
       title.innerHTML += titleText.charAt(i)
       i++
       setTimeout(writingText, titleSpeed)
     }
-
   }
 
 
