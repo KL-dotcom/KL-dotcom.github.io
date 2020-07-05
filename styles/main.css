@@ -55,6 +55,9 @@ nav a:hover {
   nav a {
     padding: 1rem;
   }
+  .nav-name {
+    font-size: 25px;
+  }
 }
 
 header {
@@ -124,18 +127,50 @@ span {
 .skills-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding: 0 0 100px 0;
 }
 
+.skills-container P {
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* 
 .skills-container p {
   flex-basis: 30%;
   padding: 0 20px;
+} */
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 2px;
+}
+
+li::before {
+  content: '▫︎ ';
+}
+
+li:last-child::after {
+  content: ' ▫︎';
+}
+
+ul {
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 900px) {
   .skills-container p {
     padding: 0 300px;
   }
+  ul {
+    padding: 0 300px;
+  }
+}
+
+.border-container {
+  border: 1px dashed #eeeeee
 }
 
 .feature {
@@ -157,7 +192,7 @@ h4 {
 .links a {
   min-width: 100px;
   padding: 2px;
-  margin: 2px;
+  margin: 6px;
   text-decoration: none;
   font-weight: bold;
   border: 2px solid #76ead7;
@@ -171,7 +206,7 @@ h4 {
 }
 
 img {
-  width: 350px;
+  width: 300px;
   margin: auto;
   flex-basis: 30%;
   border-radius: 4px;
@@ -193,13 +228,24 @@ img {
   flex-direction: column;
 }
 
+.projects-container li {
+  padding: 0;
+}
+
 .feature {
   flex-basis: 1;
   text-align: center;
+  color: #393e46;
 }
 
 .feature-container p {
   padding: 0 50px;
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    width: 250px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -209,6 +255,21 @@ img {
   }
   .projects h3, .contact-me h3 {
     font-size: 2.5rem;
+  }
+  .projects ul {
+    padding: 0 60px;
+  }
+  .links a {
+    margin: 8px;
+  }
+  .feature-container p {
+    padding: 0 300px;
+  }
+  img {
+    width: 600px;
+  }
+  .projects-container li {
+    padding: 2px;
   }
 }
 
@@ -223,7 +284,7 @@ img {
     margin: 70px;
   }
   h4 {
-    margin: 30px 0 20px;
+    margin: 10px 0 20px;
     font-size: 1.5rem;
   }
   .links {
@@ -236,9 +297,6 @@ img {
   }
   .projects h3, .contact-me h3 {
     font-size: 2.5rem;
-  }
-  img {
-    width: 600px;
   }
   .projects-container {
     display: flex;
@@ -256,10 +314,6 @@ img {
 .experience {
   margin-top: 40px;
   background-color: #76ead7;
-}
-
-.experience p {
-  padding: 30px;
 }
 
 .role {
